@@ -2,8 +2,9 @@
 import { assets } from '@/Assets/assets'
 import Link from 'next/link'
 import Image from 'next/image'
-import MLRiidaLogo from './MLRiidaLogo'
+import MLRiidaLogo from './MLRiidaLogo.jsx'
 import { useRef } from 'react';
+
 
 const Nav = () => {
    const sideMenuRef = useRef()
@@ -18,7 +19,7 @@ const Nav = () => {
   return (
     <>
       {/* Background Image */}
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden  bg-gradient-to-r from-gray-100 to-gray-200">
+      <div className="fixed inset-0 w-full h-full -z-10 bg-gradient-to-r from-gray-100 to-gray-200">
       </div>
 
       {/* Navigation Bar with Solid Background */}
