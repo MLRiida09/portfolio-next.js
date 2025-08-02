@@ -1,4 +1,4 @@
-// components/MLRiidaLogo.jsx
+
 const MLRiidaLogo = ({ size = 'normal', className = '' }) => {
   const sizeClasses = {
     small: 'text-2xl',
