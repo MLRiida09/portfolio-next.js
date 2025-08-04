@@ -18,7 +18,6 @@ import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
-import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
 import arrow_icon from './arrow-icon.png';
@@ -32,7 +31,6 @@ import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
-import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
@@ -57,7 +55,6 @@ export const assets = {
     profile_img,
     download_icon,
     hand_icon,
-    header_bg_color,
     moon_icon,
     sun_icon,
     arrow_icon,
@@ -71,7 +68,6 @@ export const assets = {
     ui_icon,
     graphics_icon,
     right_arrow,
-    send_icon,
     right_arrow_bold,
     right_arrow_bold_dark
 };
@@ -125,3 +121,47 @@ export const infoList = [
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
 ];
+
+export const contactFormFunctions = {
+    handleInputChange: (e, formData, setFormData) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    },
+
+    handleFileSelect: (event, setSelectedFile) => {
+        const file = event.target.files[0];
+        setSelectedFile(file);
+    },
+
+    handleDragOver: (event, setIsDragOver) => {
+        event.preventDefault();
+        setIsDragOver(true);
+    },
+
+    handleDragLeave: (event, setIsDragOver) => {
+        event.preventDefault();
+        setIsDragOver(false);
+    },
+
+    handleDrop: (event, setSelectedFile, setIsDragOver) => {
+        event.preventDefault();
+        setIsDragOver(false);
+        const file = event.dataTransfer.files[0];
+        setSelectedFile(file);
+    },
+
+    removeFile: (setSelectedFile) => {
+        setSelectedFile(null);
+    },
+
+    handleSubmit: (event, formData, selectedFile) => {
+        event.preventDefault();
+        console.log('Form submitted', { formData, selectedFile });
+        // Add your form submission logic here
+    }
+};
+
+
+
