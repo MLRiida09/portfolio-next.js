@@ -122,6 +122,31 @@ export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
 ];
 
+
+  export  const contactInfo = [
+        {
+            icon: assets.mail_icon,
+            title: "Email",
+            description: "mellala@gmail.com",
+            link: "mailto:hello@example.com"
+        },
+        {
+            icon: assets.hand_icon,
+            title: "Phone",
+            description: "+213 (xxx) xxx-xxxx",
+            link: "tel:+15551234567"
+        },
+        {
+            icon: assets.download_icon,
+            title: "Location",
+            description: "Blida, Algeria",
+            link: "#"
+        }
+    ];
+
+
+    
+
 export const contactFormFunctions = {
     handleInputChange: (e, formData, setFormData) => {
         setFormData({
