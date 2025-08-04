@@ -79,24 +79,34 @@ export const assets = {
 export const workData = [
     {
         title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        description: 'A modern, responsive website built with React.js and Next.js featuring sleek animations, optimized performance, and pixel-perfect design. Includes advanced CSS animations, interactive elements, and seamless user experience across all devices.',
+        bgImage: '/w1.jpg',
     },
     {
         title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        description: 'Location-based mobile application with real-time GPS tracking, interactive maps integration, and geofencing capabilities. Built using React Native with Google Maps API, featuring offline map support and location-based notifications.',
+        bgImage: '/w2.jpg',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'AI-Powered Web Design',
+        description: 'Cutting-edge web platform integrating artificial intelligence for automated design generation, smart content optimization, and personalized user experiences. Features machine learning algorithms for design recommendations and content personalization.',
+        bgImage: '/w3.jpg',
     },
     {
         title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        description: 'Comprehensive user interface and experience design project featuring user research, wireframing, prototyping, and usability testing. Created intuitive design systems with consistent branding and accessibility-first approach for optimal user engagement.',
+        bgImage: '/w4.jpg',
     },
+    {
+        title: 'E-commerce Platform',
+        description: 'Full-stack e-commerce solution with secure payment integration, inventory management, order tracking, and admin dashboard. Built with React, Node.js, and MongoDB, featuring shopping cart, wishlist, reviews system, and mobile-responsive design.',
+        bgImage: '/w5.jpg',
+    },
+    {
+        title: 'Dashboard Analytics',
+        description: 'Interactive data visualization dashboard with real-time analytics, customizable charts, and comprehensive reporting features. Includes advanced filtering, data export capabilities, and responsive design optimized for business intelligence and decision-making.',
+        bgImage: '/w6.jpg',
+    }
 ]
 
 export const serviceData = [

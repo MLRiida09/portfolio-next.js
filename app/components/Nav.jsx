@@ -18,11 +18,11 @@ const Nav = () => {
   }
   return (
     <>
-      {/* Background Image */}
+      
       <div className="fixed inset-0 w-full h-full -z-10 bg-gradient-to-r from-gray-100 to-gray-200">
       </div>
 
-      {/* Navigation Bar with Solid Background */}
+      
       <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-white shadow-sm border-b border-gray-200'>
         
         <MLRiidaLogo
@@ -56,7 +56,7 @@ const Nav = () => {
             <Image src={assets.menu_black} alt='menu' className='w-6'/>
           </button>
         </div>
-        {/* Menu on Mobile*/ }
+        
         <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen 
         transition duration-500 bg-white shadow-md rounded-sm'>
           <div className='absolute right-6 top-6' onClick={closeMenu}> 

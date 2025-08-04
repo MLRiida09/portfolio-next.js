@@ -24,15 +24,15 @@ function Services() {
             key={index}
             className='group relative bg-white border border-gray-300 rounded-2xl px-6 py-8 hover:shadow-xl hover:shadow-gray-200 cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-gray-500 overflow-hidden'
           >
-            {/* Background Gradient Effect */}
+            
             <div className='absolute inset-0 bg-gradient-to-br from-gray-50 via-transparent to-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500'></div>
             
-            {/* Icon Container */}
+            
             <div className='relative z-10 w-16 h-16 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:from-gray-200 group-hover:to-gray-300 transition-all duration-300'>
               <Image src={icon} alt={title} className='w-8 h-8' />
             </div>
             
-            {/* Content */}
+            
             <div className='relative z-10'>
               <h3 className='text-xl font-semibold text-gray-800 mb-4 group-hover:text-gray-900 transition-colors duration-300'>
                 {title}
@@ -42,7 +42,7 @@ function Services() {
                 {description}
               </p>
               
-              {/* Read More Link */}
+              
               <a 
                 href={link} 
                 className='inline-flex items-center gap-2 text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-all duration-300 group-hover:gap-3'
@@ -58,7 +58,7 @@ function Services() {
               </a>
             </div>
             
-            {/* Decorative Element */}
+            
             <div className='absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full opacity-20 group-hover:opacity-40 group-hover:scale-125 transition-all duration-500'></div>
           </div>
         ))}

@@ -11,7 +11,7 @@ const EnhancedReadMore = ({
   const [isAnimating, setIsAnimating] = useState(false);
   const dotsRef = useRef(null);
 
-  // Split content into preview and full text
+  
   const text = typeof children === 'string' ? children : '';
   const previewText = text.slice(0, maxLength);
   const remainingText = text.slice(maxLength);
@@ -138,7 +138,7 @@ const EnhancedReadMore = ({
     };
   }, []);
 
-  // Return early if no remaining text
+  
   if (!remainingText) {
     return <div className={className}>{children}</div>;
   }
