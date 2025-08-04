@@ -48,13 +48,14 @@ function Services() {
                 className='inline-flex items-center gap-2 text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-all duration-300 group-hover:gap-3'
               >
                 Read More 
-                <div className='w-4 h-4 overflow-hidden'>
-                  <Image 
-                    src={assets.right_arrow} 
-                    alt='' 
-                    className='w-4 h-4 group-hover:translate-x-1 transition-transform duration-300' 
-                  />
-                </div>
+                 <svg 
+                  className='w-4 h-4 transition-transform duration-300 group-hover:translate-x-1' 
+                  fill='none' 
+                  stroke='currentColor' 
+                  viewBox='0 0 24 24'
+                >
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M9 5l7 7-7 7' />
+                </svg>
               </a>
             </div>
             
