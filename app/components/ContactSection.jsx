@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import { contactFormFunctions, assets } from '@/Assets/assets';
-import { contactInfo } from '@/Assets/assets';
+import { contactFormFunctions, assets, contactInfo } from '@/Assets/assets';
 import Image from 'next/image';
 
 const ContactSection = () => {

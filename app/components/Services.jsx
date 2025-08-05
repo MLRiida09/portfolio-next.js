@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { assets } from '@/Assets/assets'
+
 import { serviceData } from '@/Assets/assets'
 
 const servicesText = `I offer comprehensive frontend development services focused on creating exceptional digital experiences. My expertise includes building responsive websites and web applications using React.js, Next.js, HTML5, CSS3, and JavaScript. I specialize in transforming design concepts into pixel-perfect, interactive user interfaces that work seamlessly across all devices. Whether you need a modern business website, an e-commerce platform, or a complex web application, I deliver clean, maintainable code with optimal performance and user experience. My services include custom web development, UI/UX implementation, API integration, performance optimization, and ongoing maintenance. I'm committed to using the latest web technologies and best practices to ensure your project stands out in today's competitive digital landscape.`
