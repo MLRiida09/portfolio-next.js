@@ -26,7 +26,7 @@ const ContactSection = () => {
 
             {/* Contact Info Cards */}
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10'>
-                {contactInfo.map((contact, index) => (
+                {contactInfo.map(({icon, title, description, link,}, index) => (
                     <div 
                         key={index}
                         className='group relative bg-white border border-gray-300 rounded-2xl px-6 py-8 hover:shadow-xl hover:shadow-gray-200 cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-gray-500 overflow-hidden'
@@ -35,25 +35,23 @@ const ContactSection = () => {
                         
                         <div className='relative z-10 w-16 h-16 bg-gradient-to-br from-SubtleHoverLight to-CardHoverLight rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:from-CardHoverLight group-hover:to-SubtleHoverLight transition-all duration-300'>
                             <Image 
-                                src={contact.icon} 
-                                alt={`${contact.title} icon`} 
-                                width={32} 
-                                height={32} 
+                                src={icon}
+                                alt={title} 
                                 className="w-8 h-8" 
                             />
                         </div>
                         
                         <div className='relative z-10'>
                             <h3 className='text-xl font-semibold text-gray-800 mb-4 group-hover:text-gray-900 transition-colors duration-300 font-ovo'>
-                                {contact.title}
+                                {title}
                             </h3>
                             
                             <p className='text-sm text-TextHoverLight leading-relaxed mb-6 group-hover:text-gray-700 transition-colors duration-300 font-ovo'>
-                                {contact.description}
+                                {description}
                             </p>
                             
                             <a 
-                                href={contact.link} 
+                                href={link} 
                                 className='inline-flex items-center gap-2 text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-all duration-300 group-hover:gap-3 font-ovo'
                             >
                                 Contact Now

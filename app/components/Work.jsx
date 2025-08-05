@@ -44,7 +44,7 @@ const Work = () => {
           </div>
         ))}
       </div>
-      <a href="" className='text-TextHoverLight text-sm font-ovo font-semibold text-center mt-10'>
+      <a href="" className='w-64 mx-auto px-4 sm:px-6 lg:px-10 py-3 border border-gray-800 rounded-full bg-black text-white flex items-center justify-center gap-2 text-sm sm:text-base font-ovo hover:bg-gray-800 transition-colors'>
         Show More Projects <Image src={assets.right_arrow_bold} alt='right arrow' className='w-4' />
       </a>
     </div>

@@ -33,6 +33,13 @@ import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import location_icon from './location_icon.png';
+import location_dark from './location_dark.png';
+import phone_icon from './phone-icon.png';
+import phone_icon_dark from './phone-icon-dark.png';
+import mail_icon from './mail_icon.png';
+import mail_dark from './main_dark.png';
+
 
 export const assets = {
     user_image,
@@ -69,7 +76,13 @@ export const assets = {
     graphics_icon,
     right_arrow,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    location_icon,
+    location_dark,
+    phone_icon,
+    phone_icon_dark,
+    mail_dark,
+    mail_icon,
 };
 
 export const workData = [
@@ -123,6 +136,8 @@ export const toolsData = [
 ];
 
 
+
+
   export  const contactInfo = [
         {
             icon: assets.mail_icon,
@@ -131,13 +146,13 @@ export const toolsData = [
             link: "mailto:hello@example.com"
         },
         {
-            icon: assets.hand_icon,
+            icon: assets.phone_icon,
             title: "Phone",
             description: "+213 (xxx) xxx-xxxx",
             link: "tel:+15551234567"
         },
         {
-            icon: assets.download_icon,
+            icon: assets.location_icon,
             title: "Location",
             description: "Blida, Algeria",
             link: "#"
