@@ -167,7 +167,8 @@ const ContactSection = () => {
                                 ) : (
                                     <div className="text-center">
                                         <div className="w-16 h-16 bg-gradient-to-br from-SubtleHoverLight to-CardHoverLight rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:from-CardHoverLight transition-all duration-300 text-2xl">
-                                            📁
+                                            <Image src={assets['upload']} alt="Upload Icon"className='w-10 ' />
+                                        
                                         </div>
                                         <p className="font-ovo text-gray-800 font-semibold mb-2">Upload a file</p>
                                         <p className="text-sm text-TextHoverLight font-ovo">Drag and drop or click to browse</p>

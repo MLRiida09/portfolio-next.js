@@ -28,7 +28,6 @@ import hand_icon from './hand-icon.png';
 import right_arrow_white from './right-arrow-white.png';
 import right_arrow from './right-arrow.png';
 
-// أضف الملفات تدريجياً - قم بإلغاء التعليق عن السطور التي تعمل
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import phone_icon from './phone_icon.png';
@@ -45,6 +44,8 @@ import right_arrow_bold from './right-arrow-bold.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import project_icon_dark from './project-icon-dark.png';
+import upload from './upload-file.png';
+import upload_dark from './upload-dark.png';
 export const assets = {
     logo,
     user_image,
@@ -64,8 +65,6 @@ export const assets = {
     hand_icon,
     right_arrow_white,
     right_arrow,
-    
-    // أضف هذه عندما تتأكد من وجود الملفات
     logo_dark,
     mail_icon,
     phone_icon,
@@ -82,8 +81,10 @@ export const assets = {
     code_icon_dark,
     edu_icon_dark,
     project_icon_dark,
-
+    upload ,
+    upload_dark ,
 };
+
 
 export const workData = [
     {
@@ -120,10 +121,10 @@ export const workData = [
 
 // استخدام الرموز التعبيرية مؤقتاً للخدمات
 export const serviceData = [
-    { icon: '🌐', title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: '📱', title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: '🎨', title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: '🖌️', title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
+    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
+    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
+    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 ];
 
 // استخدام الرموز التعبيرية مؤقتاً للمعلومات
