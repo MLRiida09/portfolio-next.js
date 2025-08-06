@@ -1,6 +1,4 @@
-// نسخة آمنة - اضف الملفات واحد واحد لتجنب الأخطاء
 
-// الملفات الأساسية التي غالباً ما تكون موجودة
 import logo from './logo.png';
 import user_image from './user-image.png';
 import profile_img from './profile-img.png';
@@ -32,9 +30,9 @@ import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import phone_icon from './phone_icon.png';
 import location_icon from './location_icon.png';
-import code_icon from './code-icon.png';
-import edu_icon from './edu-icon.png';
-import project_icon from './project-icon.png';
+import code_icon from './codee-icon.png';
+import edu_icon from './eduu-icon.png';
+import project_icon from './projectt-icon.png';
 import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
@@ -46,6 +44,8 @@ import edu_icon_dark from './edu-icon-dark.png';
 import project_icon_dark from './project-icon-dark.png';
 import upload from './upload-file.png';
 import upload_dark from './upload-dark.png';
+
+
 export const assets = {
     logo,
     user_image,
@@ -119,19 +119,59 @@ export const workData = [
     }
 ];
 
-// استخدام الرموز التعبيرية مؤقتاً للخدمات
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+
+export const servicesCards = [
+  { 
+    icon: assets.web_icon, 
+    title: 'Web design', 
+    description: 'Web development is the process of building, programming...', 
+    link: '' 
+  },
+
+  { 
+      icon: assets.mobile_icon, 
+      title: 'Mobile app', 
+      description: 'Mobile app development involves creating software for mobile devices...', 
+      link: '' 
+  },
+
+  { 
+      icon: assets.ui_icon, 
+      title: 'UI/UX design', 
+      description: 'UI/UX design focuses on creating a seamless user experience...', 
+      link: '' 
+  },
+
+  { 
+      icon: assets.graphics_icon, 
+      title: 'Graphics design', 
+      description: 'Creative design solutions to enhance visual communication...', 
+      link: '' 
+  },
 ];
 
-// استخدام الرموز التعبيرية مؤقتاً للمعلومات
-export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+
+export const AboutCards = [
+  { 
+    icon: assets.code_icon,
+    iconDark: assets.code_icon_dark,
+    title: 'Languages',
+    description: ' JavaScript React Js, Next Js' 
+  },
+
+  {
+      icon: assets.edu_icon,
+      iconDark: assets.edu_icon_dark, 
+      title: 'Education', 
+      description: 'B.Tech in Computer Science' 
+  },
+
+  { 
+      icon: assets.project_icon, 
+      iconDark: assets.project_icon_dark, 
+      title: 'Projects', 
+      description: 'Built more than 5 projects' 
+  }
 ];
 
 export const toolsData = [
@@ -142,8 +182,8 @@ export const toolsData = [
     assets.git
 ];
 
-// معلومات الاتصال باستخدام الرموز التعبيرية مؤقتاً
-export const contactInfo = [
+
+export const contactCards = [
     {
         icon: assets.mail_icon,
         title: "Email",
@@ -164,43 +204,4 @@ export const contactInfo = [
     }
 ];
 
-export const contactFormFunctions = {
-    handleInputChange: (e, formData, setFormData) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    },
 
-    handleFileSelect: (event, setSelectedFile) => {
-        const file = event.target.files[0];
-        setSelectedFile(file);
-    },
-
-    handleDragOver: (event, setIsDragOver) => {
-        event.preventDefault();
-        setIsDragOver(true);
-    },
-
-    handleDragLeave: (event, setIsDragOver) => {
-        event.preventDefault();
-        setIsDragOver(false);
-    },
-
-    handleDrop: (event, setSelectedFile, setIsDragOver) => {
-        event.preventDefault();
-        setIsDragOver(false);
-        const file = event.dataTransfer.files[0];
-        setSelectedFile(file);
-    },
-
-    removeFile: (setSelectedFile) => {
-        setSelectedFile(null);
-    },
-
-    handleSubmit: (event, formData, selectedFile) => {
-        event.preventDefault();
-        console.log('Form submitted', { formData, selectedFile });
-        // أضف منطق إرسال النموذج هنا
-    }
-};
