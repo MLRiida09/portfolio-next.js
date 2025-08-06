@@ -29,6 +29,7 @@ const ContactSection = () => {
                 ))}
             </div>
         </div>
+        
     );
 };
 
